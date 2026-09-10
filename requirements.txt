@@ -1,0 +1,11 @@
+numpy>=1.26
+pandas>=2.2
+gymnasium>=1.0
+stable-baselines3>=2.4
+sb3-contrib>=2.4
+torch>=2.0
+fastapi>=0.115
+uvicorn>=0.30
+pydantic>=2.8
+matplotlib>=3.8
+pytest>=8.0
