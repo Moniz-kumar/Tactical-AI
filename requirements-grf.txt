@@ -1,0 +1,3 @@
+# Install this only inside the dedicated GRF environment.
+# The upstream package still depends on legacy gym<=0.21 and compiled engine code.
+gfootball==2.10.3
