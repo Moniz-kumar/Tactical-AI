@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tactical-ai-rl"
+version = "0.3.0"
+description = "Reinforcement learning for tactical decision making in football"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "gymnasium>=1.0",
+  "stable-baselines3>=2.4",
+  "sb3-contrib>=2.4",
+  "torch>=2.0",
+  "fastapi>=0.115",
+  "uvicorn>=0.30",
+  "pydantic>=2.8",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["tactical_ai*"]
+
+[tool.setuptools.package-data]
+tactical_ai = ["ui/*.html", "ui/*.css", "ui/*.js"]
